@@ -2,12 +2,13 @@
 
 #include <xc.h>
 #include "config.h"
+#include "semaforo.h"
 
 void delay ( int t)
 {
     while ( t )
     {
-        if ( desligar ( ) == 1)
+        if ( botao ( ) == 1)
         {
             break;
         }
